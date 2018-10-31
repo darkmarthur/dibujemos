@@ -4,6 +4,7 @@
  */
 
 var express = require('express');
+var errorHandler = require('express-error-handler');
 var http = require('http');
 var path = require('path');
 var io = require('socket.io');
@@ -22,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+  app.use(errorHandler());
 }
 
 app.get('/', function(req, res){
