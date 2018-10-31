@@ -5,7 +5,7 @@ $(function(){
     return false;
   }
 
-  var url = 'http://' + window.location.host;
+  var url = 'https://' + window.location.host;
 
   // cache de objetos de jQuery
   var doc = $(document);
