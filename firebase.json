@@ -5,7 +5,11 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "rewrites": [{
+      "source": "/demo",
+      "function": "demoapp" 
+    }]
   },
   "functions": {
     "predeploy": [
